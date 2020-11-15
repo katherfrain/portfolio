@@ -1,0 +1,15 @@
+.profCard{
+    width: 40%;
+    color: #220901;
+}
+.card-body {
+    background-color: #BC3908; 
+    border: 2px solid #F6AA1C;
+}
+.card-text{
+    color:white;
+}
+
+.profpic{
+    border: 2px solid #F6AA1C
+}

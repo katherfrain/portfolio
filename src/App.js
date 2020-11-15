@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import { Container, Row } from 'reactstrap';
+import { Link, Route, Switch } from 'react-router-dom';
+import CustomizedNavbar from './pages/components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Container>
+          <Row>
+              <CustomizedNavbar />
+          </Row>
+          <Row>
+
+          </Row>
+        </Container>
+        
+        <div className='content'>
+          <Switch>
+            <Route path='/' exact>
+                <Home />
+            </Route>
+            <Route path='/projects'>
+                <Projects />
+            </Route>
+            <Route>
+              <Route path='/github' component={() => {
+                window.location.href = 'https://github.com/katherfrain'
+              }}/>
+            </Route>
+            <Route>
+            <Route path='/linkedin' component={() => {
+              window.location.href = 'https://www.linkedin.com/in/katherine-frain-92999ba7/'
+            }}/>
+            </Route>
+          </Switch>
+        </div>
+        </div>
   );
 }
 
