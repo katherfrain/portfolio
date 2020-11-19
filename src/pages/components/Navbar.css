@@ -1,6 +1,7 @@
 .customNav{
     background-image: linear-gradient(#F6AA1C 0%, #F7B53B 50%, #F6AA1C);
     color: white;
+    margin: 0 auto;
 }
 :any-link {
     color: #220901 ;   

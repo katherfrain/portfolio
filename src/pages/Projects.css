@@ -5,7 +5,7 @@
   }
 
   body, html {
-    color: black;
+    color: white !important;
     font-family: 'wrongtype' !important;
     text-align: center;
   }
@@ -15,9 +15,9 @@
   
   }
   
+
   .uiContainer{
     text-align: left;
-    display: inline-block;
   }
   
   .centred {
@@ -35,6 +35,7 @@
   }
   
   #dungeon-container {
+    padding: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,13 +81,17 @@
     background-repeat: no-repeat;
   }
   
+  #queenPortrait {
+      width: 30px;
+      height: 30px;
+  }
   /* clipped with onlinepngtools */
-  .portrait{
+  .portrait {
     width: 30px;
     height: 30px;
     align-self: left;
     align-items: left;
-    background-image: url('./components/images/output-onlinepngtools.png');
+    background-image: url('./components/images/output-onlinepngtools.png')
   
   }
   
@@ -105,9 +110,7 @@
   }
   
   
-  .cell-0 {
-  }
-  
+
   /* player sprite - sprite used loosely, no animation components */
   .player {
     background-image: url('./components/images/queenbee.png')
@@ -124,20 +127,22 @@
     background-image: url('./components/images/warrior.png');
   }
   
+  /* level 2 enemy drone */
   .cell-22 {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUKEgwAd64qglcNVDJzLxrjHiajVDwaXXgHN0oAAAClkmYjAAAAAWJLR0QJ8dml7AAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADZJREFUCNdjYAACAQYoycRg4MDAwKoUkABkKxkAySJliwQGpvKODgMGBvaKBqAscwVIHKgyAQCuAwfgBncWGAAAAABJRU5ErkJggg==');
+    background-image: url('./components/images/warrior.png');
   }
   
+  /* level 3 enemy */
   .cell-23 {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUKEgw8epnNLicPRF64uLgAAAAMH66DAAAAAWJLR0QF+G/pxwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADdJREFUCNdjYGAUFGBgYFBUFAaSgoIg0sERRDIwGoBIQTApHBoAFBAWFGUQNBQ2NmQIDRQUFAQAYHEEN/5QEDwAAAAASUVORK5CYII=');
+    background-image: url('./components/images/warrior.png');
   }
   
   .cell-24 {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUKEgzYPyf1gG6mGgUAAABSIhVDclrRAAAAAWJLR0QEj2jZUQAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADZJREFUCNdjYGBkgAAgzcTADGYJgEghQaAIo6MjkMMkKGhowCDo4ihszCAobGxszMAaGhoaAAA5cwRCKsWkKgAAAABJRU5ErkJggg==');
+    background-image: url('./components/images/warrior.png');
   }
   
   .cell-34 {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUKEgyQu9EpcpZ1rckQS2lYjai9aiKZTgwAAABkWi8NAAAAAWJLR0QIht6VegAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAEFJREFUCNdjYGQychBgYBQychVgYGBLK2BgYFIyclFgYHIycnFgUGEycXAEkkqOLgwMyi6CAQwMKgyiQDUqjC4OANNiBwQZE3FgAAAAAElFTkSuQmCC');
+    background-image: url('./components/images/queengreen.png');
   }
   
   /* exit/ladder icon */

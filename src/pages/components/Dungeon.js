@@ -70,24 +70,24 @@ function frozeWeapon(damage, tile) {
 var weapons = [null,
 
   [
-    {title:'knuckles', damage:1},
-    {title:'knife', damage:1},
-    {title:'rusty knife', damage:1, attack:weaponCanBroke, desc:'can broke at any time'}
+    {title:'Knuckles', damage:1},
+    {title:'Knife', damage:1},
+    {title:'Rusty knife', damage:1, attack:weaponCanBroke, desc:'can break at any time'}
   ],
   [
-    {title:'sword', damage:2},
-    {title:'small axe', damage:3},
-    {title:'mace', damage:3}
+    {title:'Sword', damage:2},
+    {title:'Small Axe', damage:3},
+    {title:'Mace', damage:3}
   ],
   [
-    {title:'big axe', damage:4},
-    {title:'spear', damage:4},
-    {title:'spear of vampire', damage:4, attack:vampireWeapon, desc:'chance to get enemy HP'}
+    {title:'Big axe', damage:4},
+    {title:'Spear', damage:4},
+    {title:'Spear of the Vampires', damage:4, attack:vampireWeapon, desc:'chance to drain enemy HP'}
   ],
   [
-    {title:'devil\'s mace', damage:6, attack:critical20Attack, desc:'chance to critical attack'},
-    {title:'saberlight', damage:7, desc:'red ray'},
-    {title:'wand of ice', damage:4, attack:frozeWeapon, desc:'chance to decrease enemy damage'}
+    {title:'Devil\'s Mace', damage:6, attack:critical20Attack, desc:'chance to critical attack'},
+    {title:'Saberlight', damage:7, desc:'red ray'},
+    {title:'Wand of Ice', damage:4, attack:frozeWeapon, desc:'chance to decrease enemy damage'}
   ]
 ]
 
@@ -496,7 +496,7 @@ export default class Dungeon extends React.Component {
         needReRenderUI: true,
       })
       
-      spawnParticle('<h1>Dungeon '+level+'</h1>', {color:'#f80'});
+      spawnParticle('<h1>Dungeon '+level+'</h1>', {color:'white'});
       
       playerTile.accessible = true;
       updateTilesAccessibility();
@@ -600,7 +600,7 @@ export default class Dungeon extends React.Component {
         this.setState({
           needReRenderUI: true,
         })
-         spawnParticle('you found<br>'+playerWeapon.title, {color:'#0f0'});
+         spawnParticle('you found the <br>'+playerWeapon.title, {color:'#0f0'});
         break;
       default:
         break;

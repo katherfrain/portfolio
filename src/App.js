@@ -25,16 +25,15 @@ function App() {
             <Route path='/projects'>
                 <Projects />
             </Route>
-            <Route>
-              <Route path='/github' component={() => {
-                window.location.href = 'https://github.com/katherfrain'
-              }}/>
-            </Route>
-            <Route>
-            <Route path='/linkedin' component={() => {
+            
+            <Route path='/github' component={() => {
+              window.location.href = 'https://github.com/katherfrain'
+            }}/> 
+          
+            <Route path='/linkedin' exact component={() => {
               window.location.href = 'https://www.linkedin.com/in/katherine-frain-92999ba7/'
             }}/>
-            </Route>
+     
           </Switch>
         </div>
         </div>
