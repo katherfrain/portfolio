@@ -1,0 +1,225 @@
+  @font-face {
+    font-family: 'wrongtype';
+    src: url('./components/fonts/typwrng.ttf');
+  /*credit to https://www.dafont.com/type-wrong.font */
+  }
+
+  body, html {
+    color: black;
+    font-family: 'wrongtype' !important;
+    text-align: center;
+  }
+  
+  .uiDungeonTitle{
+    text-align: left;
+  
+  }
+  
+  .uiContainer{
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .centred {
+    box-sizing: content-box;
+    margin: auto;
+  }
+  
+  #ui-container {
+    border: 5px double 231;
+    display: flex;
+    vertical-align: top;
+    width: 80vw;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  
+  #dungeon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .uiContainer{
+    align-content: left;
+    align-self: left;
+  }
+  .ui-line {
+    margin: 5px;
+    text-align: left;
+  }
+  
+  hr {
+    border: 0;
+    border-bottom: 2px solid 120;
+  }
+  
+  .ui-label {
+    color: black;
+    font-size: 0.9em;
+  }
+  
+  .ui-value {
+    color: black;
+    font-size: 1.5em;
+  }
+  
+  .field {
+    position: relative;
+    text-align: center;
+  }
+  
+  .cell {
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-left: 3px;
+    margin-top: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* clipped with onlinepngtools */
+  .portrait{
+    width: 30px;
+    height: 30px;
+    align-self: left;
+    align-items: left;
+    background-image: url('./components/images/output-onlinepngtools.png');
+  
+  }
+  
+  .hp-bar {
+    position: relative;
+    background: #ff2200;
+    top: -5px;
+    height: 4px;
+    border: 1px solid 000;
+  }
+  
+  .hp-bar-sub {
+    float: left;
+    background: #33ff00;
+    height: 4px;
+  }
+  
+  
+  .cell-0 {
+  }
+  
+  /* player sprite - sprite used loosely, no animation components */
+  .player {
+    background-image: url('./components/images/queenbee.png')
+    
+  }
+  
+  /* standard honeycomb */
+  .cell-1 {
+    background-image: url('./components/images/honeycomb-1.png');
+  }
+  
+  /* level 1 enemy drone */
+  .cell-21 {
+    background-image: url('./components/images/warrior.png');
+  }
+  
+  .cell-22 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUKEgwAd64qglcNVDJzLxrjHiajVDwaXXgHN0oAAAClkmYjAAAAAWJLR0QJ8dml7AAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADZJREFUCNdjYAACAQYoycRg4MDAwKoUkABkKxkAySJliwQGpvKODgMGBvaKBqAscwVIHKgyAQCuAwfgBncWGAAAAABJRU5ErkJggg==');
+  }
+  
+  .cell-23 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUKEgw8epnNLicPRF64uLgAAAAMH66DAAAAAWJLR0QF+G/pxwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADdJREFUCNdjYGAUFGBgYFBUFAaSgoIg0sERRDIwGoBIQTApHBoAFBAWFGUQNBQ2NmQIDRQUFAQAYHEEN/5QEDwAAAAASUVORK5CYII=');
+  }
+  
+  .cell-24 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUKEgzYPyf1gG6mGgUAAABSIhVDclrRAAAAAWJLR0QEj2jZUQAAAAlwSFlzAAAuIwAALiMBeKU/dgAAADZJREFUCNdjYGBkgAAgzcTADGYJgEghQaAIo6MjkMMkKGhowCDo4ihszCAobGxszMAaGhoaAAA5cwRCKsWkKgAAAABJRU5ErkJggg==');
+  }
+  
+  .cell-34 {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUKEgyQu9EpcpZ1rckQS2lYjai9aiKZTgwAAABkWi8NAAAAAWJLR0QIht6VegAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAEFJREFUCNdjYGQychBgYBQychVgYGBLK2BgYFIyclFgYHIycnFgUGEycXAEkkqOLgwMyi6CAQwMKgyiQDUqjC4OANNiBwQZE3FgAAAAAElFTkSuQmCC');
+  }
+  
+  /* exit/ladder icon */
+  .cell-4 {
+    background-image: url('components/images/honeycomb-exit.png');
+  }
+  
+  /* power-up CSS -- royal jelly */
+  .cell-5 {
+    background-image: url('./components/images/royaljelly.png');
+  }
+  
+  /* treasure chest/flower */
+  .cell-6 {
+    background-image: url('./components/images/flower.png');
+  }
+  
+  .cell-comeable {
+    cursor: pointer;
+  }
+  
+  .cell-comeable:hover {
+    outline: 1px solid aa0;
+  }
+  
+  .particle {
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    animation: particleFrames ease 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    -webkit-animation: particleFrames ease 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: particleFrames ease 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: particleFrames ease 1s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -o-animation-fill-mode: forwards;
+    -ms-animation: particleFrames ease 1s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+    -ms-animation-fill-mode: forwards;
+  }
+  
+  .pause-label {
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 120px;
+    padding: 40px;
+    cursor: pointer;
+  }
+  
+  .pause-label:focus {
+    display: none;
+  }
+  
+  .flash {
+    animation: flashFrames linear 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: flashFrames linear 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: flashFrames linear 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: flashFrames linear 1s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: flashFrames linear 1s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+  }
+  

@@ -1,0 +1,15 @@
+#education {
+    background-color: #F6AA1C;
+    border-color: #D97212;
+    display: inline-block;
+    color: #941B0C;
+    margin: 3%;
+}
+
+#experience {
+    margin: 3%;
+    background-color: #F6AA1C;
+    border-color: #941B0C;
+    color: #A82A0A;
+    display: inline-block;
+}

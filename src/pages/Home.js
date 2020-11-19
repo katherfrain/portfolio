@@ -7,14 +7,15 @@ import './Home.css';
 export default function Home(){
     return (
         <div id='totalHome'>
-            <Row lg="6"> 
-            <Col lg="2">
-            <ProfileCard />
-            </Col>
+            <Row>
+                <Col>
+                    <ProfileCard />
+                </Col>
+                
+                <Col >
+                    <Resume />
+                </Col>
 
-            <Col lg="2">
-            <Resume />
-            </Col>
             </Row>
             
         </div>
