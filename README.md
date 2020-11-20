@@ -42,5 +42,10 @@ Deadline was encroaching, blood tainting the waters. I'd bugged the DigitalCraft
 
 And so we found [Tiles-of-Gnome](https://codepen.io/Megabyteceer/pen/qbXJMQ) by [Vasily Kostin](https://github.com/Megabyteceer). It was decided - I would string apart the code into different components, smooth some things out, add my own sprites.
 
+It turns out that this was an unexpectedly useful learning experience. Kostin is a genius, but his code was uncommented and difficult to understand. In refactoring, I learned how to be much more comfortable both with components and with restructuring and destructing other people's work. Tiles-of-Gnome wasn't set up the way I would have set up a game, but adjusting to Kostin's mindset allowed me to abstract some components out and substitute my own creative narrative. I don't know keycases, but I know how to read Kostin's code well enough to prevent the default behavior of the down button from scrolling the website screen.
 
+The sprites were created with [Inkscape](https://inkscape.org/) and the SVGs were transformed to PNGs because pixelation at lower levels is minimal. 
 
+## Future Work
+
+In the future, I want to untangle Kostin's tile logic well enough to create a totally independent version of it. It would also be interesting to use [Redux](https://redux.js.org/) or LocalStorage to assign and track a user's score. (Score doesn't exist right now - but it could!)
