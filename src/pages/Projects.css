@@ -4,6 +4,12 @@
   /*credit to https://www.dafont.com/type-wrong.font */
   }
 
+  /* TICTACTOE BOARD CSS */
+
+.tictactoeboard {
+  margin:  0 auto
+}
+/* BEE GAME CSS */
   body, html {
     color: white !important;
     font-family: 'wrongtype' !important;
@@ -15,7 +21,6 @@
   
   }
   
-
   .uiContainer{
     text-align: left;
   }

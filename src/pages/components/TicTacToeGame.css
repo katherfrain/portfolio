@@ -1,0 +1,20 @@
+body {
+    font: 14px 'Georgia';
+    margin: 20px;
+  }
+  ol, ul{
+    padding-left: 20%;
+  }
+  .board-row{
+    display: flex;
+  }
+  .board-row:after {
+    clear: both;
+    content: "";
+  }
+  .square{
+    background-image: radial-gradient(#FFFF, #C4B7A5);
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+  }
