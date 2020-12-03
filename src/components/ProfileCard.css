@@ -6,8 +6,18 @@
     background-color: #BC3908; 
     border: 2px solid #F6AA1C;
 }
+
+#zeroMarginHere .card-body {
+    margin: 0px !important;
+}
 .card-text{
     color:white;
+}
+
+.card-title{
+    color: #220901;
+    font-size: x-large;
+    font: outline;
 }
 
 .profpic{

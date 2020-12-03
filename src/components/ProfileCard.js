@@ -5,7 +5,7 @@ import './ProfileCard.css'
 
 export default function ProfileCard() {
     return (
-        <Card className='profCard'>
+        <Card className='profCard' id='zeroMarginHere'>
             <CardBody>
                 <CardImg className='profpic' src={profPic}></CardImg>
                 <CardTitle tag="h3">Katherine Frain</CardTitle>

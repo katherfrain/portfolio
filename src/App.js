@@ -2,8 +2,8 @@ import './App.css';
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import { Container, Row } from 'reactstrap';
-import { Link, Route, Switch } from 'react-router-dom';
-import CustomizedNavbar from './pages/components/Navbar';
+import { Route, Switch } from 'react-router-dom';
+import CustomizedNavbar from './components/Navbar';
 
 function App() {
   return (

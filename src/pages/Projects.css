@@ -1,6 +1,6 @@
   @font-face {
     font-family: 'wrongtype';
-    src: url('./components/fonts/typwrng.ttf');
+    src: url('../components/fonts/typwrng.ttf');
   /*credit to https://www.dafont.com/type-wrong.font */
   }
 
@@ -91,7 +91,7 @@
     height: 30px;
     align-self: left;
     align-items: left;
-    background-image: url('./components/images/output-onlinepngtools.png')
+    background-image: url('../components/images/output-onlinepngtools.png')
   
   }
   
@@ -113,51 +113,51 @@
 
   /* player sprite - sprite used loosely, no animation components */
   .player {
-    background-image: url('./components/images/queenbee.png')
+    background-image: url('../components/images/queenbee.png')
     
   }
   
   /* standard honeycomb */
   .cell-1 {
-    background-image: url('./components/images/honeycomb-1.png');
+    background-image: url('../components/images/honeycomb-1.png');
   }
   
   /* level 1 enemy drone */
   .cell-21 {
-    background-image: url('./components/images/warrior.png');
+    background-image: url('../components/images/warrior.png');
   }
   
   /* level 2 enemy drone */
   .cell-22 {
-    background-image: url('./components/images/warrior.png');
+    background-image: url('../components/images/warrior.png');
   }
   
   /* level 3 enemy */
   .cell-23 {
-    background-image: url('./components/images/warrior.png');
+    background-image: url('../components/images/warrior.png');
   }
   
   .cell-24 {
-    background-image: url('./components/images/warrior.png');
+    background-image: url('../components/images/warrior.png');
   }
   
   .cell-34 {
-    background-image: url('./components/images/queengreen.png');
+    background-image: url('../components/images/queengreen.png');
   }
   
   /* exit/ladder icon */
   .cell-4 {
-    background-image: url('components/images/honeycomb-exit.png');
+    background-image: url('../components/images/honeycomb-exit.png');
   }
   
   /* power-up CSS -- royal jelly */
   .cell-5 {
-    background-image: url('./components/images/royaljelly.png');
+    background-image: url('../components/images/royaljelly.png');
   }
   
   /* treasure chest/flower */
   .cell-6 {
-    background-image: url('./components/images/flower.png');
+    background-image: url('../components/images/flower.png');
   }
   
   .cell-comeable {

@@ -13,3 +13,7 @@
     color: #A82A0A;
     display: inline-block;
 }
+
+.card-body{
+    margin: 20px
+}

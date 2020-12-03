@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css'
-import Dungeon from './components/Dungeon';
+import Dungeon from '../components/Dungeon';
 
 export default function Projects() {
     return (
