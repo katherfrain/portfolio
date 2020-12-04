@@ -1,4 +1,5 @@
 import React from 'react'
+import portrait from './images/output-onlinepngtools.png'
 
 
 export default class GameUI extends React.Component {
@@ -20,7 +21,7 @@ export default class GameUI extends React.Component {
             <div className='uiLevel'>Level: {level}</div>
             <hr key='line1' />
            
-            <img className='portrait' alt="queen portrait" />
+            <img className='portrait' src={portrait} alt="queen portrait" />
       
             <div className='uiContainer'>
             <div id='uiHPLabel'>HP: {playerHP}/{playerHPmax}</div>
