@@ -1,19 +1,15 @@
-#education {
-    background-color: #F6AA1C;
-    border-color: #D97212;
-    display: inline-block;
-    color: #941B0C;
-    margin: 3%;
-}
 
-#experience {
-    margin: 3%;
-    background-color: #F6AA1C;
-    border-color: #941B0C;
-    color: #A82A0A;
-    display: inline-block;
+.btn {
+    margin: 3% !important;
+    background-color: #F6AA1C !important;
+    border-color: #941B0C !important;
+    color: #A82A0A !important;
+    display: inline-block !important;
 }
 
 .card-body{
     margin: 20px
+}
+#icons {
+    display: inline-block;
 }

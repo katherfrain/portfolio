@@ -12,9 +12,7 @@ function App() {
           <Row>
               <CustomizedNavbar />
           </Row>
-          <Row>
 
-          </Row>
         </Container>
         
         <div className='content'>

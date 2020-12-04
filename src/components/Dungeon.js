@@ -10,7 +10,7 @@ var mapWidth = 50;
 var mapHeight = 30;
 
 var tileSize = 33;
-var potionPower = 10;
+
 
 
 var playerTile = { x: 0, y: 0 };
@@ -24,7 +24,7 @@ var xpToNextLevel = 30;
 var playerWeapon = null;
 var playerHP = 25;
 var playerHPmax = 25;
-
+var potionPower = Math.round(playerHPmax/2);
 //=============================================
 // weapons special attacks
 function critical20Attack(damage, tile) {
@@ -36,14 +36,6 @@ function critical20Attack(damage, tile) {
   return damage;
 }
 
-function weaponCanBroke(damage, tile) {
-  if(Math.random()>0.95){
-    damage = 0;
-    spawnParticle('<h2>broke weapon<h2>', {color:'#f00'}, tile);
-    this.setWeapon('shatter', 0);
-  }
-  return damage;
-}
 function vampireWeapon(damage, tile) {
   if(Math.random()>0.5666){
     var heal = Math.ceil(damage/4);
@@ -72,7 +64,6 @@ var weapons = [null,
   [
     {title:'Knuckles', damage:1},
     {title:'Knife', damage:1},
-    {title:'Rusty knife', damage:1, attack:weaponCanBroke, desc:'can break at any time'}
   ],
   [
     {title:'Sword', damage:2},
@@ -80,7 +71,7 @@ var weapons = [null,
     {title:'Mace', damage:3}
   ],
   [
-    {title:'Big axe', damage:4},
+    {title:'Big Axe', damage:4},
     {title:'Spear', damage:4},
     {title:'Spear of the Vampires', damage:4, attack:vampireWeapon, desc:'chance to drain enemy HP'}
   ],
@@ -136,7 +127,7 @@ var tasksQueue = [];
 
 
 function placeUnit(tile, pow, damage){
-  var hp = pow*5*level;
+  var hp = pow*3*level;
   if(!damage) {
     damage = pow*enemyPowerByLevels[level];
   }

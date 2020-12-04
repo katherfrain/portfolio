@@ -1,6 +1,13 @@
 import React from 'react';
 import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, UncontrolledCollapse } from 'reactstrap';
 import './Resume.css'
+import pythonicon from './icons/python.png'
+import html5icon from './icons/html-5.png'
+import jsxicon from './icons/jsx.png'
+import postgresicon from './icons/icons8-postgresql-48.png'
+import cssicon from './icons/icons8-css-filetype-50.png'
+import reacticon from './icons/icons8-react-50.png'
+import restfulicon from './icons/icons8-api-50.png'
 
 export default function Resume() {
 
@@ -68,7 +75,26 @@ export default function Resume() {
                 </CardBody>
          
         </UncontrolledCollapse>
-        
+        <br />
+        <Button id ='languages'>Languages</Button>
+        <UncontrolledCollapse toggler='#languages'>
+        <br />
+        <div id='icons'>
+            <div>Python<br></br><img src={pythonicon} style={{width:'50px'}} alt='python icon from https://www.flaticon.com/free-icon/python_919852'/>
+            </div>
+            <div>HTML 5<br /><img src={html5icon} style={{margin:'3%', width:'50px'}} alt='html 5 icon from https://www.flaticon.com/free-icon/html-5_919827' />
+            </div>
+            <div>JSX<br /><img src={jsxicon} style={{margin:'3%', width:'50px'}} alt='jsx icon from https://www.flaticon.com/free-icon/jsx_541490?term=jsx&page=1&position=4&related_item_id=541490' />
+            </div>
+            <div> PostgreSQL<br /> <img src={postgresicon} style={{margin:'3%', width:'50px'}} alt ='postgres icon from https://icons8.com/icons/set/postgresql' />
+            </div>
+            <div>CSS <br /><img src={cssicon} style={{margin:'3%', width: '50px'}} alt='css icon from https://icons8.com/icons/set/css' />
+            </div>
+            <div>React <br /><img src={reacticon} style={{margin:'3%', width: '50px'}} alt='react icon from https://icons8.com/icons/set/react' />
+            </div>
+            <div>Restful APIs <br /> <img src={restfulicon} style={{margin: '3%', width:'50px'}} alt='restful API icon from https://icons8.com/icons/set/restful-api' />
+            </div></div>
+               </UncontrolledCollapse>
         </Container>
 
         </>
