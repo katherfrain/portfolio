@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, UncontrolledCollapse } from 'reactstrap';
+import { Button, Card, CardBody, CardSubtitle, CardTitle, Container, Row, UncontrolledCollapse } from 'reactstrap';
 import './Resume.css'
 import pythonicon from './icons/python.png'
 import html5icon from './icons/html-5.png'
@@ -79,21 +79,20 @@ export default function Resume() {
         <Button id ='languages'>Languages</Button>
         <UncontrolledCollapse toggler='#languages'>
         <br />
-        <div id='icons'>
-            <div>Python<br></br><img src={pythonicon} style={{width:'50px'}} alt='python icon from https://www.flaticon.com/free-icon/python_919852'/>
+            <div className='icons'>Python<br></br><img src={pythonicon} style={{width:'50px'}} alt='python icon from https://www.flaticon.com/free-icon/python_919852'/>
             </div>
-            <div>HTML 5<br /><img src={html5icon} style={{margin:'3%', width:'50px'}} alt='html 5 icon from https://www.flaticon.com/free-icon/html-5_919827' />
+            <div className='icons'>HTML 5<br /><img src={html5icon} style={{margin:'3%', width:'50px'}} alt='html 5 icon from https://www.flaticon.com/free-icon/html-5_919827' />
             </div>
-            <div>JSX<br /><img src={jsxicon} style={{margin:'3%', width:'50px'}} alt='jsx icon from https://www.flaticon.com/free-icon/jsx_541490?term=jsx&page=1&position=4&related_item_id=541490' />
+            <div className='icons'>JSX<br /><img src={jsxicon} style={{margin:'3%', width:'50px'}} alt='jsx icon from https://www.flaticon.com/free-icon/jsx_541490?term=jsx&page=1&position=4&related_item_id=541490' />
             </div>
-            <div> PostgreSQL<br /> <img src={postgresicon} style={{margin:'3%', width:'50px'}} alt ='postgres icon from https://icons8.com/icons/set/postgresql' />
+            <div className='icons'> PostgreSQL<br /> <img src={postgresicon} style={{margin:'3%', width:'50px'}} alt ='postgres icon from https://icons8.com/icons/set/postgresql' />
             </div>
-            <div>CSS <br /><img src={cssicon} style={{margin:'3%', width: '50px'}} alt='css icon from https://icons8.com/icons/set/css' />
+            <div className='icons'>CSS <br /><img src={cssicon} style={{margin:'3%', width: '50px'}} alt='css icon from https://icons8.com/icons/set/css' />
             </div>
-            <div>React <br /><img src={reacticon} style={{margin:'3%', width: '50px'}} alt='react icon from https://icons8.com/icons/set/react' />
+            <div className='icons'>React <br /><img src={reacticon} style={{margin:'3%', width: '50px'}} alt='react icon from https://icons8.com/icons/set/react' />
             </div>
-            <div>Restful APIs <br /> <img src={restfulicon} style={{margin: '3%', width:'50px'}} alt='restful API icon from https://icons8.com/icons/set/restful-api' />
-            </div></div>
+            <div className='icons'>Restful APIs <br /> <img src={restfulicon} style={{margin: '3%', width:'50px'}} alt='restful API icon from https://icons8.com/icons/set/restful-api' />
+            </div>
                </UncontrolledCollapse>
         </Container>
 
