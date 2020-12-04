@@ -13,20 +13,12 @@ export default function projCard(props) {
                     <CardTitle>{props.title}</CardTitle>
                     <CardText>{props.cardtext}</CardText>
                     <Button>
-                        <Link to={props.buttonlink}>
+                        <a href = {props.buttonlink}>
                         Check out {props.title} on Github!
-                        </Link>
+                        </a>
                     </Button>
                 </CardBody> 
                 </Card>
-                <div className ='gamble'>
-                    <Switch>
-                        <Route path={props.buttonlink} component={() => {
-                            window.location.href = props.buttonlink
-                        }}/>
-                    </Switch>
-                </div>
-
                 </>
         )
     }

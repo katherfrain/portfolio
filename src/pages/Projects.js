@@ -19,7 +19,7 @@ export default function Projects() {
       </Container>
       <Container>
         <ProjectCard title ='Team-Me'
-        cardtext='An app developed mostly to develop our database skills, Team-Me allows a user to input and track any sort of team.'
+        cardtext='An app developed mostly to develop our database skills, Team-Me uses PostgreSQL and bcrypt to allow users to store and track multiple teams.'
         screenshotsrc={teammepic}
         buttonlink='https://github.com/phamand2/full-stack-project'
         />

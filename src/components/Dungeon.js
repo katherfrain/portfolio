@@ -386,9 +386,7 @@ export default class Dungeon extends React.Component {
           
           if(nextTiles.length === 0)
             break;
-          
           curTile = randomFromList(nextTiles);
-          
         }
         curTile = randomFromList(emptyTiles);
       }
@@ -461,27 +459,27 @@ export default class Dungeon extends React.Component {
       });
       
       //chests distribution
-      var chestsCount = 1 + Math.round(Math.random());
+      var chestsCount = 1 + level;
       for(i = 0; i<chestsCount; i++){
         emptyTiles.pop().type = 6;
       }
       
-      
-      //potions distribution
-      var potionsCount = level+Math.random()*2.3;
-      for(i = 0; i<potionsCount; i++){
-        emptyTiles.pop().type = 5;
-      }
-      
-      
       //enemy distribution
-      var enemyCount = Math.round(level * (3 +Math.random()*1.7)) ;
+      var enemyCount = level*3;
       for(let i = 0; i < enemyCount; i++) {
         tile = removeRandomFromList(emptyTiles);
         tile.type = 2;
         placeUnit(tile, 1);
       }
       
+      //potions distribution
+      var potionsCount = level + Math.round(enemyCount/5);
+      for(i = 0; i<potionsCount; i++){
+        emptyTiles.pop().type = 5;
+      }
+      
+      
+
       this.setState({
         needReRender: true,
         needReRenderUI: true,
