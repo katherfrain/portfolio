@@ -460,7 +460,7 @@ export default class Dungeon extends React.Component {
       
       //chests distribution
       var chestsCount = 1 + level;
-      for(i = 0; i<chestsCount; i++){
+      for(let i = 0; i<chestsCount; i++){
         emptyTiles.pop().type = 6;
       }
       
@@ -477,9 +477,6 @@ export default class Dungeon extends React.Component {
       for(i = 0; i<potionsCount; i++){
         emptyTiles.pop().type = 5;
       }
-      
-      
-
       this.setState({
         needReRender: true,
         needReRenderUI: true,
@@ -524,6 +521,7 @@ export default class Dungeon extends React.Component {
             spawnParticle('<h1>You Win!!!</h1>', {color:'#0f4'});
             tile.type = 5;
             removeUnit(tile);
+            this.startNewGame();
           } else {
             if(xpToNextLevel <= 0) {
               playerLevel++;
